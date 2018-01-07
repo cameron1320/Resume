@@ -1,0 +1,142 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+\usepackage{textcomp}
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+\usepackage{fullpage}
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be 
+% To reduce the height of the top margin uncomment: 
+\addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+\setlength\textheight{10in}
+\begin{document}
+
+\thispagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+\setlength{\linewidth}{6.5in}
+\setlength{\hsize}{6.5in}
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Cameron \textsc{Naugle}}\bigskip\par} % Your name
+
+\section{Personal Information}
+
+\begin{tabular}{rl}
+	\textsc{Place and Date of Birth:} & Roseville, CA  | 20 January 1993 \\
+	\textsc{Address:} & 316 Leroy Ct., San Luis Obispo, CA 93405 \\
+	\textsc{Phone:} &  (916) 517-9331\\
+	\textsc{email:} & \href{mailto:cameron.naugle@gmail.com}{cameron.naugle@gmail.com}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Work \& Club Experience}
+
+	\begin{tabular}{p{.65in}|p{5.5in}}
+		\emph{current} & Research Assistant, California Polytechnic State University, San Luis Obispo, CA \\
+		June 2015 & \footnotesize{Research for advisor on developing signal processing software for experimental and theoretical vibration analysis. Signal processing methods were verified against current software and has been used in several experiments. A publication detailing some of this work is referred to in the ``Publications'' section. Advisor: Xi Wu, (805) 756-5214}, \href{mailto:xwu@calpoly.edu}{xwu@calpoly.edu}\\
+		\multicolumn{2}{c}{} \\		
+		
+		Dec. 2014 & Engineering Intern, Golder Associates Roseville, CA and Walnut Creek, CA \\
+		June 2013 &\footnotesize{Engineered, designed, and modeled piping systems for incompressible and compressible fluids. Designed map drawings for industrial waste sites and estimated costs for stormwater runoff prevention preparedness. Supervisor: Noah Fennessy, (925) 956-4800}\\
+		\multicolumn{2}{c}{} \\		
+		
+		Nov. 2014 Sep. 2011& Corporate Relations Director of the Engineering Student Council (ESC), California Polytechnic State University, San Luis Obispo, CA\\
+		& \footnotesize{Provided contact between college of engineering clubs and companies. Cooridinated involvement of companies with school events and directed the Western Region Conference with over 40 attendees.}\\
+	\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+	\begin{tabular}{p{.65in}|p{5.5in}}	
+		\emph{Current} Sep. 2011 & Masters of Science in Mechanical Engineering,  California Polytechnic State University, San Luis Obispo\\
+		& \footnotesize{Interests: Vibrations, Rotor-Dynamics, Signal Processing and Controls}\\
+		& \footnotesize{Research: Rotor-dynamic gyroscopic effect, signal processing and analysis of rotor-dynamic data, gear fault detection | Advisor: Xi Wu}\\
+		& \footnotesize{Class List: Continuum Mechanics, Inelastic Stress Analysis, Advanced Vibrations, Rotor-dynamcis, Viscous Flow, Dynamics \& Thermodynamics of Compressible Flow, Advanced Heat Transfer, Turbomachinery, Controls, Ground Vehicle Dynamics, Finite Element Analysis}\\
+		& \footnotesize{GPA: 3.22}\\
+	\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS AND ADDITIONAL INFO
+%----------------------------------------------------------------------------------------
+
+%\section{Standardized Testing}
+
+%	\begin{tabular}{p{.65in}|p{5.5in}}	
+%		Jan. 2015 & {GRE\textregistered} Verbal:161 (87\textsuperscript{th} percentile); {GRE\textregistered} Quantitative:158 (71\textsuperscript{st} percentile)\\
+%		\multicolumn{2}{c}{} \\
+%		June 2010 & ACT\textregistered: 24 English; 34 Mathematics; 28 Reading; 31 Science (93\textsuperscript{rd} percentile)\\ 
+%	\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Computer Programs}
+
+
+
+ MATLAB\textsuperscript{\textregistered}, LabVIEW, Abaqus, LS-DYNA, TrueGrid, ADAMS, Simulink, AutoCAD, SolidWorks, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}, MS Excel, MS Word, MS Project, ArcGIS, PipeFLO, EES
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{Publication, Interests and Activities}
+
+\begin{itemize}
+	
+	\item \footnotesize{Research paper published in the Journal of Applied Mechanical Engineering discussing new methods for verifying theoretical rotor-dynamic models of overhung rotating disks: \href{https://www.omicsgroup.org/journals/a-full-spectrum-analysis-methodology-applied-to-an-anisotropic-overhung-rotor-2168-9873-1000232.php?aid=81544}{A Full Spectrum Analysis Methodology Applied to an Anisotropic Overhung Rotor}}.
+	\item \footnotesize{Design and construction of a data acquisition system for the analysis and  monitoring of rotating machinery. Implementation in the current undergraduate and graduate vibrations lab. }
+	\item \footnotesize{Senior project designing and building a flight test rig for a small ram air turbine.}
+	\item \footnotesize{Research project on vibration of a windmill transmission from gear tooth damage. Use of ADAMS simulations and experiment to provide gear deflections and MATLAB to analyze data(Wavelet and FFT signal analysis).}
+	\item \footnotesize{Air motor constructed using various machines, including the lathe and the vertical mill.}
+	\item\footnotesize{Avid hiker, backpacker, cyclist, and woodworker.}
+\end{itemize}
+
+
+\end{document}
