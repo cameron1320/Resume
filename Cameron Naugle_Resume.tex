@@ -35,15 +35,15 @@
 \usepackage{fullpage}
 %\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be 
 % To reduce the height of the top margin uncomment: 
-\addtolength{\voffset}{-1.3cm}
+\addtolength{\voffset}{-1.5cm}
 
 \usepackage{hyperref} % Required for adding links	and customizing them
 \definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
-
+\usepackage{changepage}
 \usepackage{titlesec} % Used to customize the \section command
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
-\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+\titlespacing{\section}{0pt}{1pt}{1pt} % Spacing around sections
 \setlength\textheight{10in}
 \begin{document}
 
@@ -56,7 +56,7 @@
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\par{\centering{\Huge Cameron \textsc{Naugle}}\bigskip\par} % Your name
+\par{\centering{\Huge  \textsc{Cameron Naugle}}\bigskip\par} % Your name
 
 \section{Personal Information}
 
@@ -73,17 +73,26 @@
 
 \section{Work \& Club Experience}
 
-	\begin{tabular}{p{.65in}|p{5.5in}}
-		\emph{current} & Research Assistant, California Polytechnic State University, San Luis Obispo, CA \\
-		June 2015 & \footnotesize{Research for advisor on developing signal processing software for experimental and theoretical vibration analysis. Signal processing methods were verified against current software and has been used in several experiments. A publication detailing some of this work is referred to in the ``Publications'' section. Advisor: Xi Wu, (805) 756-5214}, \href{mailto:xwu@calpoly.edu}{xwu@calpoly.edu}\\
+	\begin{tabular}{p{.6in}|p{5.5in}}
+		\emph{current}& Research Assistant, California Polytechnic State University, San Luis Obispo, CA \\
+		June 2015& \footnotesize{Research for advisor on developing signal processing software for experimental and theoretical vibration analysis. Signal processing methods were verified against current software and has been used in several experiments. A publication detailing some of this work is referred to in the ``Publications'' section. Advisor: Xi Wu, (805) 756-5214}, \href{mailto:xwu@calpoly.edu}{xwu@calpoly.edu}\\
 		\multicolumn{2}{c}{} \\		
 		
-		Dec. 2014 & Engineering Intern, Golder Associates Roseville, CA and Walnut Creek, CA \\
-		June 2013 &\footnotesize{Engineered, designed, and modeled piping systems for incompressible and compressible fluids. Designed map drawings for industrial waste sites and estimated costs for stormwater runoff prevention preparedness. Supervisor: Noah Fennessy, (925) 956-4800}\\
+		Jan. 2017& Property Maintenance and Improvement, Waller Properties, San Luis Obispo, CA\\
+		Nov. 2017& \footnotesize{Drywall, exterior siding, exterior painting, moving dirt, water pipeline repairs and retrofits, roofing, fence construction, landscaping.}\\
+		\multicolumn{2}{c}{} \\
+		
+		Jan. 2017& Lead Electric Bicycle Mechanic, BoltAbout, San Luis Obispo, CA\\
+		Sep. 2017& \footnotesize{Assembled, maintained, overhauled, and altered electric bikes for rent. As lead mechanic, additional responsibilities were not limited to: ordering parts, communicating with manufacturer, communicating with customers, designing bike storage system for 200+ bike inventory, and designing work-flow for two mechanic's stations. Supervisors: Tavin Boynton, Co-Founder \& President, \href{mailto:tavin@boltabout.com}{tavin@boltabout.com}, (805) 858-9702, Matt Maxwell, Co-Founder \& CEO}\\
+		\multicolumn{2}{c}{} \\
+		
+		Dec. 2014& Engineering Intern, Golder Associates Roseville, CA and Walnut Creek, CA \\
+		June 2013&\footnotesize{Engineered, designed, and modeled piping systems for incompressible and compressible fluids. Designed map drawings for industrial waste sites and estimated costs for stormwater runoff prevention preparedness. Supervisor: Noah Fennessy, (925) 956-4800}\\
 		\multicolumn{2}{c}{} \\		
 		
-		Nov. 2014 Sep. 2011& Corporate Relations Director of the Engineering Student Council (ESC), California Polytechnic State University, San Luis Obispo, CA\\
+		Nov. 2014\newline Sep. 2011& Corporate Relations Director of the Engineering Student Council (ESC), California Polytechnic State University, San Luis Obispo, CA\\
 		& \footnotesize{Provided contact between college of engineering clubs and companies. Cooridinated involvement of companies with school events and directed the Western Region Conference with over 40 attendees.}\\
+		
 	\end{tabular}
 
 %----------------------------------------------------------------------------------------
@@ -92,12 +101,12 @@
 
 \section{Education}
 
-	\begin{tabular}{p{.65in}|p{5.5in}}	
+	\begin{tabular}{p{.6in}|p{5.5in}}	
 		\emph{Current} Sep. 2011 & Masters of Science in Mechanical Engineering,  California Polytechnic State University, San Luis Obispo\\
 		& \footnotesize{Interests: Vibrations, Rotor-Dynamics, Signal Processing and Controls}\\
 		& \footnotesize{Research: Rotor-dynamic gyroscopic effect, signal processing and analysis of rotor-dynamic data, gear fault detection | Advisor: Xi Wu}\\
 		& \footnotesize{Class List: Continuum Mechanics, Inelastic Stress Analysis, Advanced Vibrations, Rotor-dynamcis, Viscous Flow, Dynamics \& Thermodynamics of Compressible Flow, Advanced Heat Transfer, Turbomachinery, Controls, Ground Vehicle Dynamics, Finite Element Analysis}\\
-		& \footnotesize{GPA: 3.22}\\
+		& \footnotesize{Masters Curriculum GPA: 3.22}\\
 	\end{tabular}
 
 %----------------------------------------------------------------------------------------
@@ -116,18 +125,17 @@
 %	COMPUTER SKILLS 
 %----------------------------------------------------------------------------------------
 
-\section{Computer Programs}
+\section{Computer Programs/Skills}
 
-
-
- MATLAB\textsuperscript{\textregistered}, LabVIEW, Abaqus, LS-DYNA, TrueGrid, ADAMS, Simulink, AutoCAD, SolidWorks, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}, MS Excel, MS Word, MS Project, ArcGIS, PipeFLO, EES
-
+\begin{adjustwidth}{7pt}{7pt}
+ \footnotesize{MATLAB, LabVIEW, Abaqus, LS-DYNA, TrueGrid, ADAMS, Simulink, AutoCAD, SolidWorks, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}, MS Excel, MS Word, MS Project, ArcGIS, PipeFLO, EES, bash Linux OS, Windows OS}
+\end{adjustwidth}
 %----------------------------------------------------------------------------------------
 %	INTERESTS AND ACTIVITIES
 %----------------------------------------------------------------------------------------
 
 \section{Publication, Interests and Activities}
-
+\begin{adjustwidth}{}{7pt}
 \begin{itemize}
 	
 	\item \footnotesize{Research paper published in the Journal of Applied Mechanical Engineering discussing new methods for verifying theoretical rotor-dynamic models of overhung rotating disks: \href{https://www.omicsgroup.org/journals/a-full-spectrum-analysis-methodology-applied-to-an-anisotropic-overhung-rotor-2168-9873-1000232.php?aid=81544}{A Full Spectrum Analysis Methodology Applied to an Anisotropic Overhung Rotor}}.
@@ -135,8 +143,10 @@
 	\item \footnotesize{Senior project designing and building a flight test rig for a small ram air turbine.}
 	\item \footnotesize{Research project on vibration of a windmill transmission from gear tooth damage. Use of ADAMS simulations and experiment to provide gear deflections and MATLAB to analyze data(Wavelet and FFT signal analysis).}
 	\item \footnotesize{Air motor constructed using various machines, including the lathe and the vertical mill.}
+	\item \footnotesize{Full engine swap on a 1999 Volvo V70XC. Self taught mechanic skills from a combination of online forums and under the hood figuring. }
 	\item\footnotesize{Avid hiker, backpacker, cyclist, and woodworker.}
-\end{itemize}
 
+\end{itemize}
+\end{adjustwidth}
 
 \end{document}
