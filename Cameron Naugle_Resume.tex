@@ -36,15 +36,19 @@
 %\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be 
 % To reduce the height of the top margin uncomment: 
 \addtolength{\voffset}{-1.5cm}
-
+\usepackage{array}
 \usepackage{hyperref} % Required for adding links	and customizing them
 \definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
 \usepackage{changepage}
+\usepackage{tabu}
 \usepackage{titlesec} % Used to customize the \section command
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{0pt}{0pt} % Spacing around sections
 \setlength\textheight{10in}
+\newcommand{\catspace}{-.4em}
+\newcommand{\secspace}{-.25em}
+\newcommand{\bullspace}{.1em}
 \begin{document}
 
 \thispagestyle{empty} % Removes page numbering
@@ -56,16 +60,19 @@
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\par{\centering{\Huge  \textsc{Cameron Naugle}}\bigskip\par} % Your name
+\par{\centering{\fontsize{36}{48}  \textsc{Cameron Naugle}}\par} % Your name
 
-\section{ Personal Information}
 
-\begin{tabular}{rl}
-	\textsc{Place and Date of Birth:} & Roseville, CA, January 20, 1993 \\
-	\textsc{Address:} & 4691 Maureen Circle, Livermore, CA 94550 \\
-	\textsc{Phone:} &  (916) 517-9331\\
-	\textsc{email:} & \href{mailto:cameron.naugle@gmail.com}{cameron.naugle@gmail.com}\\[-.5em]
-\end{tabular}
+\begin{center}
+	\begin{tabular} {c}
+		
+		4691 Maureen Circle, Livermore, CA 94550 \\
+		Roseville, CA, January 20, 1993 \\
+		\href{mailto:cameron.naugle@gmail.com}{cameron.naugle@gmail.com}\\
+		(916) 517-9331\\[\secspace]
+	\end{tabular}
+\end{center}
+
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE 
@@ -74,32 +81,38 @@
 
 \begin{tabular}{p{.6in}|p{5.5in}}	
 	\emph{Current} Sep. 2011 & Master \& Bachelor of Science in Mechanical Engineering,  California Polytechnic State University, San Luis Obispo, CA\\
-	& \footnotesize{Interests: Vibrations, Rotor-Dynamics, Signal Processing and Controls}\\
-	& \footnotesize{Research: Rotor-dynamic gyroscopic effect, signal processing and analysis of rotor-dynamic data, gear fault detection | Advisor: Xi Wu, (805) 756-5214}, \href{mailto:xwu@calpoly.edu}{xwu@calpoly.edu}\\
 	& \footnotesize{Class List: Continuum Mechanics, Inelastic Stress Analysis, Advanced Vibrations, Rotor-dynamcis, Viscous Flow, Dynamics \& Thermodynamics of Compressible Flow, Advanced Heat Transfer, Turbomachinery, Controls, Ground Vehicle Dynamics, Finite Element Analysis}\\
-	& \footnotesize{Masters Curriculum GPA: 3.22}\\[-.5em]
+	& \footnotesize{Research Interests: Rotor-dynamic gyroscopic effect, signal processing and analysis of rotor-dynamic data, gear fault detection}\\
+	&\footnotesize{Masters GPA: 3.22\hfill  Advisor: Xi Wu, (805) 756-5214}, \href{mailto:xwu@calpoly.edu}{xwu@calpoly.edu}\\[\secspace]
+
 \end{tabular}
 
-\section{ Work \& Club Experience}
+
+\section{Experience}
 
 	\begin{tabular}{p{.6in}|p{5.5in}}
 		\emph{current}& Research Assistant, California Polytechnic State University, San Luis Obispo, CA \\
-		June 2015& \footnotesize{Development of signal processing software for experimental and theoretical vibration analysis. Signal processing methods were verified against current software and has been used in several experiments. A publication detailing some of this work is referred to in the ``Publications'' section. | Advisor: Xi Wu, (805) 756-5214}, \href{mailto:xwu@calpoly.edu}{xwu@calpoly.edu}\\
-		\multicolumn{2}{c}{} \\	[-.75em]	
+		June 2015& \footnotesize{Development of signal processing software for experimental and theoretical vibration analysis. Signal processing methods were verified against current software and has been used in several experiments. A publication detailing some of this work is referred to in the ``Publication'' section.}\\
+		&\footnotesize{\hfill Advisor: Xi Wu, (805) 756-5214, \href{mailto:xwu@calpoly.edu}{xwu@calpoly.edu}}\\
+		\multicolumn{2}{c}{} \\	[\catspace]	
 		
 		Jan. 2017& Property Maintenance and Improvement, Waller Properties, San Luis Obispo, CA\\
-		Nov. 2017& \footnotesize{Drywall, exterior siding, exterior/interior painting, dirt moving, water pipeline repairs and retrofits, roofing, fence construction, and landscaping on four separate properties. | Supervisor: Donald R. Waller, (805) 549-2425}\\
-		\multicolumn{2}{c}{} \\[-.75em]
+		Nov. 2017& \footnotesize{Drywall, exterior siding, exterior/interior painting, dirt moving, water pipeline repairs and retrofits, roofing, fence construction, and landscaping on four separate properties.}\\[.5em]
+		&\footnotesize{ \hfill Supervisor: Donald R. Waller, (805) 549-2425, \href{mailto:donald.waller@morganstanley.com}{donald.waller@morganstanley.com}}\\
+		\multicolumn{2}{c}{} \\[\catspace]
 		Jan. 2017& Lead Electric Bicycle Mechanic, BoltAbout, San Luis Obispo, CA\\
-		Sep. 2017& \footnotesize{Assembled, maintained, overhauled, and altered electric bikes for rent. As lead mechanic, additional responsibilities were not limited to: ordering parts, communicating with manufacturer, communicating with customers, designing bike storage system for 200+ bike inventory, and designing work-flow for two mechanic's stations. | Supervisor: Tavin Boynton, Co-Founder \& President, (805) 858-9702, \href{mailto:tavin@boltabout.com}{tavin@boltabout.com}}\\
-		\multicolumn{2}{c}{} \\[-.75em]
+		Sep. 2017& \footnotesize{Assembled, maintained, overhauled, and altered electric bikes for rent. As lead mechanic, additional responsibilities were not limited to: ordering parts, communicating with manufacturer, communicating with customers, designing bike storage system for 200+ bike inventory, and designing work-flow for two mechanic's stations.}\\[.5em]
+		& \footnotesize{\hfill Supervisor: Tavin Boynton, Co-Founder \& President, (805) 858-9702, \href{mailto:tavin@boltabout.com}{tavin@boltabout.com}}\\
+		\multicolumn{2}{c}{} \\[\catspace]
 		
 		Dec. 2014& Engineering Intern, Golder Associates, Roseville and Walnut Creek, CA \\
-		June 2013&\footnotesize{Engineered, designed, and modeled piping systems for incompressible and compressible fluids. Designed map drawings for industrial waste sites and estimated costs for stormwater runoff prevention preparedness. | Supervisor: Noah Fennessy, (925) 956-4800}, \href{nfennessy@golder.com}{nfennessy@golder.com}\\
-		\multicolumn{2}{c}{} \\	[-.75em]	
+		June 2013&\footnotesize{Engineered, designed, and modeled piping systems for incompressible and compressible fluids. Designed map drawings for industrial waste sites and estimated costs for stormwater runoff prevention preparedness.}\\[.5em]
+		&\footnotesize{\hfill Supervisor: Noah Fennessy, (925) 956-4800, \href{nfennessy@golder.com}{nfennessy@golder.com}}\\
+		\multicolumn{2}{c}{} \\	[\catspace]	
 		
-		Nov. 2014\newline Sep. 2011& Corporate Relations Director of the Engineering Student Council (ESC), California Polytechnic State University, San Luis Obispo, CA\\
-		& \footnotesize{Provided contact between college of engineering clubs and companies. Cooridinated involvement of companies with school events and directed the Western Region Conference with over 40 attendees.}\\[-.5em]
+		Nov. 2014\newline Sep. 2011& Corporate Relations Director, Engineering Student Council, California Polytechnic State University, San Luis Obispo, CA\\
+		& \footnotesize{Provided contact between college of engineering clubs and companies. Cooridinated involvement of companies with school events and directed the Western Region Conference with over 40 attendees.}\\[.5em]
+		& \footnotesize{\hfill Supervisor: Michael Waddington, President, (510) 589-8562, \href{mailto:mjwaddy@gmail.com}{mjwaddy@gmail.com}}\\[\secspace]
 		
 	\end{tabular}
 
@@ -125,28 +138,26 @@
 %	COMPUTER SKILLS 
 %----------------------------------------------------------------------------------------
 
-\section{ Computer Programs}
 
-\begin{adjustwidth}{7pt}{7pt}
- \footnotesize{MATLAB, LabVIEW, Abaqus, LS-DYNA, TrueGrid, ADAMS, Simulink, AutoCAD, SolidWorks, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}, MS Excel, MS Word, MS Project, ArcGIS, PipeFLO, EES, bash, Linux OS, Windows OS}\\[-2em]
-\end{adjustwidth}
 %----------------------------------------------------------------------------------------
 %	INTERESTS AND ACTIVITIES
 %----------------------------------------------------------------------------------------
 
-\section{ Publication, Interests and Activities}
-\begin{adjustwidth}{}{7pt}
+\section{ Computer Programs, Publication and Interests}
+\begin{adjustwidth}{-7pt}{7pt}
 \begin{itemize}
-	
-	\item \footnotesize{Research paper published in the Journal of Applied Mechanical Engineering on the topic of verifying theoretical rotor-dynamic models of overhung rotating disks: \href{https://www.omicsgroup.org/journals/a-full-spectrum-analysis-methodology-applied-to-an-anisotropic-overhung-rotor-2168-9873-1000232.php?aid=81544}{A Full Spectrum Analysis Methodology Applied to an Anisotropic Overhung Rotor}}.
+	\setlength\itemsep{\bullspace}
+	\item \footnotesize{MATLAB, LabVIEW, Abaqus, LS-DYNA, TrueGrid, ADAMS, Simulink, AutoCAD, SolidWorks, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}, MS Excel, MS Word, MS Project, ArcGIS, PipeFLO, EES, bash, Git, Linux OS, Windows OS}
+	\item \footnotesize{Research paper published in the Journal of Applied Mechanical Engineering on the topic of verifying theoretical rotor-dynamic models of overhung rotating disks: \href{https://www.omicsgroup.org/journals/a-full-spectrum-analysis-methodology-applied-to-an-anisotropic-overhung-rotor-2168-9873-1000232.php?aid=81544}{``A Full Spectrum Analysis Methodology Applied to an Anisotropic Overhung Rotor''}}.
 	\item \footnotesize{Design and construction of a data acquisition system for the analysis and  monitoring of rotating machinery. Implementation in the current undergraduate and graduate vibrations lab. }
 	\item \footnotesize{Senior project designing and building a flight test rig for a small ram air turbine.}
 	\item \footnotesize{Research project on vibration of a windmill transmission from gear tooth damage. Use of ADAMS simulations and experiment to provide gear deflections and MATLAB to analyze data(Wavelet and FFT signal analysis).}
-	\item \footnotesize{Air motor constructed using various machines, including the lathe and the vertical mill.}
+	\item \footnotesize{Air motor constructed using various machines, including lathe and vertical mill.}
 	\item \footnotesize{Engine swap on a 1999 Volvo V70XC. Self taught from a combination of online forums and under the hood figuring. }
-	\item\footnotesize{Avid hiker, backpacker, cyclist, and woodworker.}
+	\item\footnotesize{Avid hiker, backpacker, cyclist, gardener, baker and woodworker.}
 
 \end{itemize}
 \end{adjustwidth}
+
 
 \end{document}
